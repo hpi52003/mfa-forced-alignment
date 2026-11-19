@@ -1,12 +1,5 @@
 #!/usr/bin/env python3
 """Prepare the raw dataset for MFA.
-
- - Converts every audio file (incl. NIST SPHERE files that are named .wav)
-   to a real 16 kHz mono 16-bit PCM WAV using ffmpeg.
- - Cleans each transcript (lowercase, no punctuation, no line breaks,
-   fixes "seventy- six" -> "seventy six") and writes it as <name>.txt
-   next to the matching wav.
-
 Usage: python scripts/prepare_corpus.py --raw raw_data --out corpus
 """
 import argparse, re, subprocess
