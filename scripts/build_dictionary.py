@@ -1,14 +1,5 @@
 #!/usr/bin/env python3
 """Build custom_dictionary.dict = stock dictionary + G2P output + manual overrides.
-
-Words listed in the overrides file replace any G2P-generated lines for the same word
-(used for 'wbur', which G2P pronounces badly because it is read letter by letter).
-
-Usage:
-  python scripts/build_dictionary.py --g2p custom_oov.dict \
-         --overrides manual_overrides.dict --out custom_dictionary.dict
-The stock english_us_arpa.dict is located automatically under ~/Documents/MFA,
-or pass --stock <path>.
 """
 import argparse, glob, os
 from pathlib import Path
