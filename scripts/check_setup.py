@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 r"""Quick self-check (about one minute). Run in the Miniforge Prompt, inside the aligner env,
 from the project folder:   python scripts\check_setup.py
-
-Checks: mfa and ffmpeg are installed, required files exist, prepare_corpus.py works,
-and build_dictionary.py reproduces the committed custom_dictionary.dict.
-Prints PASS / FAIL / SKIP for each check. Does not run any alignment.
 """
 import argparse, shutil, subprocess, sys, tempfile
 from pathlib import Path
